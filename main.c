@@ -7,15 +7,13 @@ int main(){
   int a[size];			
   int n;
  for(int i = 0;i < size; i++){
-    *(a+i) = rand()%100 + 1;
+    printf("enter number: ");
+    scanf("%d", (a+i));
 }
   insertion_sort(a,size);
   for(int i = 0; i < size; i++){
-     if(i == 0)
-       printf("[");
-	printf("%d", *(a+i));
+    printf("%d", *(a+i));
      if(i == 49){
-       printf("]");
        break;
      }
    printf(",");
